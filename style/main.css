@@ -14,7 +14,11 @@ a {
     width: 100%;
     height: 797px;
 }
-
+.spec_menu {
+    background: black;!important;
+    color: white;!important;
+    width: 100%;!important;
+}
 .header_top {
     width: 100%;
     height: 109px;
@@ -22,23 +26,22 @@ a {
     justify-content: center;
     align-items: flex-end;
 }
-.header_top__logo {
-    background: black;
+.header_top__logo svg{
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
+
 .header_bot {
-    width: 100%;
+    width: 90%;
     height: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
 }
-.header_bot__center {
-}
-.header_bot__right {
 
-}
 .header_bot__center a, .header_bot__right a {
     font-size: 15px;
     font-weight: 400;
@@ -46,6 +49,8 @@ a {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: .07em;
+    font-family: Futura,sans-serif;
+    margin: 0 5px;
 }
 
 #background-video {
@@ -171,4 +176,181 @@ a {
     box-sizing: border-box;
     width: 40px;
     height: 40px;
+}
+
+.store {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.store__title {
+    font-size: 50px;
+    margin: 30px;
+    vertical-align: baseline;
+    justify-self: center;
+}
+.store__row {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.store__row__card {
+    width: 430px;
+    height: 500px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.store__row__card__price {
+    justify-self: flex-start;
+    align-self: flex-start;
+    background: black;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.store__row__card__name {
+    width: 400px;
+    justify-self: flex-end;
+    font-size: 30px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.store__row__card__item:hover {
+    opacity: 0.8;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.item__title {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.item__info {
+    width: 1500px;
+    height: 671px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+.item__info__left {
+    width: 765px;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+}
+.item__info__right {
+    width: 625px;
+    height: 671px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.item__info__right__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 168px;
+    color: black;
+    padding: 10px 0;
+    background: white;
+    margin-bottom: 20px;
+}
+.item__info__right__info {
+    display: flex;
+}
+.item__info__right__info p {
+    margin-right: 10px;
+    border: 2px solid #474852;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #474852;
+}
+.item__info__right__size {
+    display: flex;
+    flex-direction: column;
+    color: #474852;
+    margin-top: 20px;
+}
+.item__info__right__size .sizes {
+    display: flex;
+}
+.item__info__right__size .sizes p {
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 2px solid #474852;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #474852;
+}
+.size-active {
+    background: #fff;
+    border: 2px solid #fff;!important;
+    font-weight: 700;
+}
+.item__info__right__buy {
+    margin-top: 30px;
+    color: #474852;
+}
+.buy-area {
+    display: flex;
+    margin-top: 20px;
+}
+.buy-area__qtty {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 30px;
+    justify-content: center;
+    align-content: center;
+}
+.buy-area__qtty p {
+    width: 33%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buy-area__qtty .qtty-active {
+    background: white;
+    color: black;!important;
+}
+.buybtn {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 3px solid white;
+    color: black;
+    border-radius: 30px;
+    margin-left: 20px;
+    padding: 0 40px;
+}
+.item__info__right__info p:hover, .item__info__right__size .sizes p:hover {
+    background: white;
+    cursor: pointer;
 }
